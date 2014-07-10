@@ -1,6 +1,6 @@
-task-manager
+Task Manager
 ============
-#####The app for people who hate Google Calendar
+####The app for people who hate Google Calendar
 
 No, it doesn't sync to your fancy phone or send out reminders.
 This marvel of modern engineering is a simple command line app
