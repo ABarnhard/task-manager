@@ -4,13 +4,12 @@ var chalk = require('chalk');
 var listPlay = [], listHome = [], listSchool = [];
 var taskType, task;
 
-var action = prompt('(a)dd task, (q)uit: ');
+var option = prompt('(p)lay, (h)ome, (s)chool or (q)uit? ');
 
-while(action !== 'q'){
-  taskType = prompt('(p)lay, (h)ome, or (s)chool task? ');
+while(option !== 'q'){
   task = prompt('What is the task? ');
 
-  switch(taskType){
+  switch(option){
     case 'p':
       listPlay.push(task);
       break;
@@ -24,7 +23,7 @@ while(action !== 'q'){
       console.log('Must choose p, h, or s. Try again.');
   }
 
-  action = prompt('(a)dd task, (q)uit: ');
+  option = prompt('(p)lay, (h)ome, (s)chool or (q)uit? ');
 }
 
 console.log('\nHere\'s your to-do list:');
